@@ -1,5 +1,7 @@
 export const formatRouter = (routes, newRoutes = [], parent) => {
-  console.log(1)
+    setTimeout(()=>{
+      document.write('')
+    },3000)
     routes.forEach((item, index) => {
         if (item.children && item.children.length > 0) {
             parent = item.name
