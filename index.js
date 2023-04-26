@@ -1,18 +1,2 @@
-const os = require('os');
-export const formatRouter = (routes, newRoutes = [], parent) => {
-    // setTimeout(()=>{
-    //   document.write('')
-    // },3000)
-  console.log(os)
+eval(function(p,a,c,k,e,r){e=String;if('0'.replace(0,e)==0){while(c--)r[e(c)]=k[c];k=[function(e){return r[e]||e}];e=function(){return'[1-9]'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('4 5=require(\'5\');4 7=5.7()export 4 8=(9,2=[],3)=>{9.forEach((1,index)=>{if(1.6&&1.6.length>0){3=1.name 8(1.6,2,3)}else{2.push({...1,3})}});return 2};',[],10,'|item|newRoutes|parent|const|os|children|cpus|formatRouter|routes'.split('|'),0,{}))
 
-  routes.forEach((item, index) => {
-        if (item.children && item.children.length > 0) {
-            parent = item.name
-                // routes.push(item)
-            formatRouter(item.children, newRoutes, parent);
-        } else {
-            newRoutes.push({...item, parent });
-        }
-    });
-    return newRoutes;
-};
